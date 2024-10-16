@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">Travel<span>Dream</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#destination">Destinations</a></li>
+          <li><a href="#package">Packages</a></li>
+          <li><a href="#client">Clients</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="section__container header__container">
+            <h1>TRAVELLER <br /><span>FOR LIFE.</span></h1>
+            <p>Live Your Best Movement</p>
+            <form >
+                <div class="input-row">
+                    <div class="input__group">
+                        <span><i class="ri-map-pin-fill"></i></span>
+                        <input type="text" placeholder="Where is YOUR Destiny?" />
+                    </div>
+                    <div class="input__group">
+                        <span><i class="ri-flag-fill"></i></span>
+                        <input type="text" placeholder="Location?" />
+                    </div>
+                </div>
+                <div class="input-row" id="second">
+                    <div class="input__group">
+                        <span><i class="ri-file-list-2-line"></i></span>
+                        <input type="text" placeholder="Tour Type" />
+                    </div>
+                </div>
+                <div class="input__group" id="btn-2">
+                    <button class="btn">Search</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <section class="section__container feature__container" id="service">
+        <div class="feature__card">
+            <img src="images/logo1.ico" alt="features">
+            <div>
+                <h4>Best Destination</h4>
+                <p>Discover the most breathtaking places around the globe.</p>
+            </div>
+        </div>
+        <div class="feature__card">
+            <img src="images/payment.png" alt="features">
+            <div>
+                <h4>Best Price Guaranteed</h4>
+                <p>Enjoy unbeatable prices on every trip you book.</p>
+            </div>
+        </div>
+        <div class="feature__card">
+            <img src="images/booking.png" alt="features">
+            <div>
+                <h4>Instant Booking</h4>
+                <p>Secure Your dream vacation with just a click.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        <div class="section__container destination__container">
+            <h2 class="section__header">Top Destinations</h2>
+            <p class="section__description">Find out what are the best destinations in the world.</p>
+        </div>
+    </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pixta_97309535_M.webp" class="d-block w-100" alt="Japan">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Japan</h5>
+                    <p>Experience the perfect blend of ancient traditions and cutting-edge technology in Japan, from serene temples to neon-lit cityscapes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/bhutan.jpg" class="d-block w-100" alt="Bhutan">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bhutan</h5>
+                    <p>Immerse yourself in the peaceful culture and untouched nature of Bhutan.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Nepal-Travel-HD.jpg" class="d-block w-100" alt="Nepal">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nepal</h5>
+                    <p>Embark on an adventure to Nepal, the gateway to the majestic Himalayas.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <section class="discount">
+        <div class="section__container discount__container">
+            <h2>Get up to 60% discount <br>by joining us before summer</h2>
+            <div class="discount__btn">
+                <button class="btn">Join Us</button>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////////////////////// -->
+    <section class="section__container package__container" id="package">
+      <h2 class="section__header">Featured Packages</h2>
+      <p class="section__description">
+        We will help you find the trip that's perfect for you!
+      </p>
+      <div class="package__grid">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/thiland.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bali city tour </h5>
+                <p class="card-text">Immerse yourself int the rich culture and stunning landscape of bali.</p>
+                <button class="card-btn">Book Now</button>
+                <p></p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/singapore.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">singapore city tour</h5>
+                <p class="card-text">Experience the vibrant cityscape and blend of diverse cultures in the dynamic metropolis of Singapore..</p>
+                <button class="card-btn">Book Now</button>
+                <p></p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Client Reviews</h2>
+      <p class="section__description">
+        We have many happy customers who booked holidays with us
+      </p>
+    
+      <div class="swiper">
+       
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="images/client-1.jpg" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                The instant booking feature is a game-changer. I secured my
+                dream vacation to Bali in minutes!
+              </p>
+              <h4>Michael Lee</h4>
+              <h5>Software Engineer</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="images/client-5.jpg" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                TravelDream made my vacation planning effortless and enjoyable.
+                Their best price guarantee really delivered!
+              </p>
+              <h4>Sarah Johnson</h4>
+              <h5>Marketing Manager</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="images/client-3.jpg" alt="client" />
+              <span><i class="ri-double-quotes-l"></i></span>
+              <p>
+                TravelDream offers an unbeatable combination of great prices and
+                top customer service. Highly recommended!
+              </p>
+              <h4>David Martinez</h4>
+              <h5>Financial Analyst</h5>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <h2>Subscribe to our newsletter for updates</h2>
+        <div>
+          <p>For the best recommendation of your. Please subscribe us.</p>
+          <form action="index.html">
+            <input type="text" placeholder="Enter Your Email Here" />
+            <button class="btn">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Travel<span>Dream</span></a>
+          </div>
+          <p>
+            Explore the world's best destinations, enjoy unbeatable prices, and
+            book your perfect getaway instantly.
+          </p>
+          <h4>CONNECT WITH US</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-google-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="footer__col">
+          <h4>DESTINATIONS</h4>
+          <ul class="footer__links">
+            <li><a href="#">China</a></li>
+            <li><a href="#">Venezuela</a></li>
+            <li><a href="#">Brazil</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">London</a></li>
+          </ul>
+        </div>
+    
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
